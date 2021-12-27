@@ -14,10 +14,10 @@ class HttpRequest {
   getToken(url) {
     const path = this.getPath(url),
       {
-        REACT_APP_SECRET_KEY_PARSER,
+        REACT_APP_SECRET_KEY,
       } = process.env,
       token = {
-        parser: REACT_APP_SECRET_KEY_PARSER,
+        parser: REACT_APP_SECRET_KEY,
       };
     return { headers: {} };
     // return {
